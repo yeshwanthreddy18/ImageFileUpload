@@ -1,0 +1,10 @@
+<div class="col-4" *ngIf = "imagePreviewData">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="{{imageUrl+imagePreviewData.path}}" alt="{{imagePreviewData.filename}}">
+      <div class="card-body">
+        <h5 class="card-title">Mime Type:{{imagePreviewData.mimetype}}</h5>
+        <p class="card-text">File Size: {{imagePreviewData.size}}</p>
+        <a href="{{imageUrl+imagePreviewData.path}}" class="btn btn-primary">In New Window</a>
+      </div>
+    </div>
+  </div>
